@@ -1,0 +1,194 @@
+{
+    "languages": {
+        "title": "Sprachen",
+        "items": {
+            "french": {
+                "title": "Französisch",
+                "subtitle": "Muttersprache"
+            },
+            "english": {
+                "title": "Englisch",
+                "subtitle": "C1 (Fließend) - TOEIC 965 Punkte"
+            },
+            "german": {
+                "title": "Deutsch",
+                "subtitle": "C1 (Fließend) - DSD Zertifikat"
+            }
+        }
+    },
+    "skills": {
+        "programming": {
+            "title": "Programmierung",
+            "description": "Python (Lego Mindstorms), Dart (Flutter), C, C++, Java, HTML/CSS/JS, Google Firebase, Ansible"
+        },
+        "technical": {
+            "title": "Technisch",
+            "description": "Elektronik (2015-2018), Rubik's Cube (2x2x2, 3x3x3, 4x4x4, Ghost Cube, Mirror Cube, Megaminx)"
+        },
+        "digitalSkills": {
+            "title": "Digitale Fähigkeiten",
+            "description": "PIX Zertifiziert - 760 Punkte"
+        },
+        "music": {
+            "title": "Musik",
+            "description": "Klassische Gitarre (seit 2011)"
+        },
+        "sports": {
+            "title": "Sport",
+            "description": "Klettern, Radfahren, Tischtennis, Einradfahren, Wellenreiten"
+        }
+    },
+    "introduction": "Motivierter Master-Erstsemester im Bereich Software Engineering mit einer soliden Grundlage in Projektmanagement, KI und Webentwicklung.",
+    "experience": {
+        "title": "Erfahrung",
+        "itIntern": {
+            "title": "Praktikant im IT-Projektmanagement",
+            "descriptions": [
+                "Self-gehostete KI mit Ollama, angepasste mistral KI-Modelle",
+                "Übersetzung von Matlab zu Python Code",
+                "Netzwerkinfrastruktur verwaltet",
+                "LXC Bereitstellung mit Ansible"
+            ],
+            "period": "Juli-August 2024",
+            "company": "Doliam"
+        },
+        "awakeChallenge": {
+            "title": "3. Platz beim Awake Challenge",
+            "descriptions": [
+                "Erstellt ein autonomes Auto auf einem 1/10 Maßstab-Zirkel",
+                "Verwendet nur LiDAR und eine Kamera",
+                "Bildverarbeitung in Python, restlicher Code in C"
+            ],
+            "period": "September 2023 - Juni 2024",
+            "company": "Awake Group (innovateam)"
+        },
+        "tutor": {
+            "title": "Mathematik Nachhilfelehrer",
+            "description": "Bietet akademische Unterstützung für drei Gymnasiasten",
+            "period": "September 2023 - Gegenwart",
+            "company": "Acadomia"
+        },
+        "appDev": {
+            "title": "Anwendungsentwicklung",
+            "descriptions": [
+                "Entwickelte eine Anwendung zur Verbesserung der Online-Präsenz unabhängiger Einzelhändler",
+                "Erstellt mit Flutter (Dart) und Firebase"
+            ],
+            "period": "Oktober 2022 - Gegenwart",
+            "location": "Straßburg",
+            "company": "Commerstras",
+            "website": "https://commerstras.fr"
+        },
+        "seasonal": {
+            "title": "Saisonarbeiter",
+            "descriptions": [
+                "Positionen: Kassierer, Kundenservice, Warenmanagement und Parkmaskottchen",
+                "Arbeitete in einem multikulturellen Umfeld (Deutsch/Englisch)"
+            ],
+            "period": "Sommer 2022 & 2023",
+            "company": "Legoland Deutschland"
+        },
+        "gluciAide": {
+            "title": "Gluci'Aide",
+            "descriptions": [
+                "Webseite für Diabetiker zur Schätzung der Kohlenhydratmenge in hausgemachten Rezepten",
+                "Webseite in HTML/CSS/PHP erstellt",
+                "App in Flutter entwickelt"
+            ],
+            "period": "April 2020 - Gegenwart",
+            "website": "https://gluci-aide.dx.am"
+        }
+    },
+    "formation": {
+        "title": "Ausbildung",
+        "meng": {
+            "title": "Meng in Software Engineering",
+            "institution": "Nationale Graduiertenschule für Ingenieurwesen, ENSICAEN",
+            "descriptions": [
+                "Immersive Projekte, Strategie, Management",
+                "Software-Design, Agile Methoden, UML",
+                "Softwareentwicklung, KI, Cybersicherheit",
+                "E-Payments, Bildverarbeitung, Git"
+            ],
+            "period": "September 2023 - Juni 2026"
+        },
+        "kleber": {
+            "title": "Kléber Gymnasium, Straßburg",
+            "descriptions": [
+                "Zweijährige Vorbereitungskurse für Aufnahmeprüfungen an französischen Ingenieurschulen",
+                "Fortgeschrittene Mathematik, Physik und Informatik"
+            ],
+            "period": "September 2021 - Juni 2023"
+        },
+        "louisArmand": {
+            "title": "Louis Armand Gymnasium",
+            "subtitle": "Abitur (Europäische Sektion), Höchste Auszeichnung",
+            "descriptions": [
+                "Optionen: Fortgeschrittene Mathematik, Europäische Sektion (Mathematik auf Deutsch)",
+                "Schwerpunkte: Mathematik, Physik-Chemie, Digitale und Informatik"
+            ],
+            "period": "September 2018 - Juni 2021"
+        },
+        "pepiteNormandie": {
+            "title": "Pépite Normandie",
+            "description": "Einführung in GDPR und Rechnungswesen",
+            "period": "2023"
+        },
+        "funMooc": {
+            "title": "Fun Mooc",
+            "description": "Künstliche Intelligenz",
+            "period": "Januar 2021"
+        },
+        "firstAid": {
+            "title": "Erste-Hilfe-Zertifikat (PSC1)",
+            "period": "2017"
+        }
+    },
+    "engagements": {
+        "title": "Engagements",
+        "president": {
+            "title": "Präsident, ENSICAEN Mission Lab Junior Enterprise",
+            "subtitle": "(Verein)",
+            "descriptions": [
+                "Entwickelte Strategie, führte Teams und managte Projekte"
+            ],
+            "period": "April 2024 - Gegenwart"
+        },
+        "coordinator": {
+            "title": "Koordinator, Katholische Seelsorge für Studierende in Caen",
+            "description": "Organisierte wöchentliche Aktivitäten und Gesamtleitung für über 100 Studenten",
+            "period": "September 2023 - Gegenwart"
+        },
+        "cubScout": {
+            "title": "Wölflingsleiter, Scouts of Europe",
+            "description": "Leitete ein Team, das 20 Kinder im Alter von 8-12 Jahren betreut",
+            "period": "September 2023 - Gegenwart"
+        },
+        "voluntaryTutor": {
+            "title": "Ehrenamtlicher Tutor",
+            "description": "Mathematik/Physik-Chemie",
+            "period": "2021"
+        },
+        "classRep": {
+            "title": "Klassensprecher / Schulvorstand",
+            "period": "2014-2021"
+        }
+    },
+    "references": {
+        "title": "Referenzen",
+        "paulPremont": {
+            "name": "Paul Premont",
+            "designation": "Chief Information Officer",
+            "company": "Doliam",
+            "contact": "[contact me first]",
+            "relationship": "Praktikumsbetreuer"
+        },
+        "hugoDescoubes": {
+            "name": "Hugo Descoubes",
+            "designation": "Leiter der Embedded Systems MEng",
+            "company": "Ensicaen",
+            "contact": "[contact me first]",
+            "relationship": "Mentor für Awake Challenge"
+        }
+    }
+}
