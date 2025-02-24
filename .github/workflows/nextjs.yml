@@ -93,7 +93,7 @@ jobs:
         env:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
-          source-files: 'out/'
+          source-files: ${{ steps.deployment.outputs.page_url }}
           destination-username: 'rubidev68'
           destination-repository: 'rubidev68.github.io'
           destination-directory: ''
