@@ -9,11 +9,11 @@ import { useInView } from "react-intersection-observer"
 import cn from "classnames"
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog"
 import { useState } from "react"
-import { useRouter, usePathname } from "next/navigation"
+import { useRouter } from "next/navigation"
 import en from "./locales/en.json"
 import fr from "./locales/fr.json"
 import de from "./locales/de.json"
-import { LanguageSwitcher } from "@/app/language"
+import { useLanguage } from "./contexts/LanguageContext"
 
 type CardDetails = {
   title: string
@@ -23,9 +23,8 @@ type CardDetails = {
 
 
 export default function CV() {
-  const router = useRouter()
-  const pathname = usePathname()
-  const t = pathname?.startsWith('/fr') ? fr : pathname?.startsWith('/de') ? de : en
+  const { language, setLanguage } = useLanguage()
+  const t = language === 'fr' ? fr : language === 'de' ? de : en
 
   const { ref: profileRef, inView: profileInView } = useInView({
     triggerOnce: true,
@@ -73,7 +72,7 @@ export default function CV() {
           {/* Quote */}
           <Card className="p-4 bg-gray-50">
             <blockquote className="text-[#79819a]">
-              <p className="mb-2">&ldquo;Intelligence is the ability to adapt to change.&rdquo;</p>
+              <p className="mb-2">&ldquo;{ t.quote }&rdquo;</p>
               <footer className="text-sm">Stephen Hawking</footer>
             </blockquote>
           </Card>
@@ -114,21 +113,21 @@ export default function CV() {
           <div className="space-y-4">
             <h3 className="font-semibold text-[#2e2e48]">{t.languages.title}</h3>
             <div className="space-y-2">
-                <div className="flex items-center gap-2 cursor-pointer" onClick={() => router.push('/fr')}>
+                <div className="flex items-center gap-2 cursor-pointer" onClick={() => setLanguage("fr")}>
                   <span className="text-xl">🇫🇷</span>
                   <div>
                   <p className="text-[#2e2e48]">{t.languages.items.french.title}</p>
                   <p className="text-[#79819a] text-sm">{t.languages.items.french.subtitle}</p>
                   </div>
                 </div>
-              <div className="flex items-center gap-2 cursor-pointer" onClick={() => router.push('/')}>
+              <div className="flex items-center gap-2 cursor-pointer" onClick={() => setLanguage("en")}>
                 <span className="text-xl">🇬🇧</span>
                 <div>
                   <p className="text-[#2e2e48]">{t.languages.items.english.title}</p>
                   <p className="text-[#79819a] text-sm">{t.languages.items.english.subtitle}</p>
                 </div>
               </div>
-              <div className="flex items-center gap-2 cursor-pointer" onClick={() => router.push('/de')}>
+              <div className="flex items-center gap-2 cursor-pointer" onClick={() => setLanguage("de")}>
                 <span className="text-xl">🇩🇪</span>
                 <div>
                   <p className="text-[#2e2e48]">{t.languages.items.german.title}</p>

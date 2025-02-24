@@ -1,9 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  i18n: {
-    locales: ['en', 'fr', 'de'],
-    defaultLocale: 'en'
-  },
+  output: "export",
   eslint: {
     ignoreDuringBuilds: true,
   },
