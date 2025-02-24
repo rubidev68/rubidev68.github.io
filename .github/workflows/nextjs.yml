@@ -88,6 +88,13 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+      - name: Push generated webpage to another repository
+        uses: nkoppel/push-files-to-another-repository@v1.1.4
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+        with:
+          source-files: 'out/'
+          destination-username: 'rubidev68'
+          destination-repository: 'rubidev68.github.io'
+          destination-directory: ''
+          commit-email: 'rubidev68@gmail.com'
